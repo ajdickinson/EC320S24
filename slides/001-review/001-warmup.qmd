@@ -1,0 +1,42 @@
+---
+title: "Warm Up"
+subtitle: "Andrew Dickinson"
+date: last-modified
+self-contained: TRUE
+format:
+  html:
+    theme: 
+      - cosmo
+      - doc-styles.scss
+    toc: true
+    toc-depth: 3
+    html-math-method: mathjax
+    number-sections: false
+---
+
+Imagine you randomly select a student from a large class. We're interested in their final course grade. Here's a possible breakdown of how the grades are distributed:
+
+| Grade | Percentage of Students |
+|-------|------------------------|
+| A     | 20%                    |
+| B     | 35%                    |
+| C     | 25%                    |
+| D     | 15%                    |
+| F     | 5%                     |
+
+[Q01.]{.question} If you pick one student at random, what is the probability that the student received at least a B grade?
+
+::: {.answer style="display: inherit;"}
+
+**Probability of at least a B grade:** To get at least a B, the student could have received a B, C, D, or F.  Sum the probabilities of these grades: $35\% + 25\% + 15\% + 5\% = 80\%$
+
+:::
+
+
+[Q02.]{.question} What is the probability that a randomly chosen student did not receive an A?
+
+::: {.answer style="display: inherit;"}
+
+**Probability of not receiving an A:** This is the opposite (or complement) of getting an A. Since the probabilities must add up to 100%, the probability of not getting an A is $100\% - 20\% = 80\%$
+
+:::

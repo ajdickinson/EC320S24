@@ -1,0 +1,71 @@
+---
+name: appendix
+---
+
+---
+
+## Variance: Rule 03 Expanded {.scrollable}
+
+[Back to Variance Rule 03](#variance-rule-03)
+
+::: {.tiny}
+
+The variance of a random variable $X$ is defined as:
+
+$$
+\text{Var}(X) = E[(X - \mu_X)^2]
+$$
+
+$\text{Cov}(X, Y)$ is defined as:
+
+$$
+\text{Cov}(X, Y) = E[(X - \mu_X)(Y - \mu_Y)]
+$$
+
+For two random variables $X$ and $Y$, the variance of their sum $X + Y$ is:
+
+$$
+\text{Var}(X + Y) = E[((X + Y) - (\mu_X + \mu_Y))^2]
+$$
+
+Expanding the squared term, we get:
+
+$$
+\begin{align*}
+\text{Var}(X + Y) &= E[(X - \mu_X + Y - \mu_Y)^2] \\
+&= E[(X - \mu_X)^2 + 2(X - \mu_X)(Y - \mu_Y) + (Y - \mu_Y)^2] \\
+&= E[(X - \mu_X)^2] + E[2(X - \mu_X)(Y - \mu_Y)] + E[(Y - \mu_Y)^2] \\
+&= \text{Var}(X) + 2\text{Cov}(X, Y) + \text{Var}(Y)
+\end{align*}
+$$
+
+If $X$ and $Y$ are uncorrelated, then $\text{Cov}(X, Y) = 0$, and the above simplifies to:
+
+$$
+\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)
+$$
+
+Similarly, the variance of the difference $X - Y$ is:
+
+$$
+\text{Var}(X - Y) = E[((X - Y) - (\mu_X - \mu_Y))^2]
+$$
+
+Expanding the squared term, just like before:
+
+$$
+\begin{align*}
+\text{Var}(X - Y) &= E[(X - \mu_X - (Y - \mu_Y))^2] \\
+&= E[(X - \mu_X)^2 - 2(X - \mu_X)(Y - \mu_Y) + (Y - \mu_Y)^2] \\
+&= \text{Var}(X) - 2\text{Cov}(X, Y) + \text{Var}(Y)
+\end{align*}
+$$
+
+Again, if $X$ and $Y$ are uncorrelated, $\text{Cov}(X, Y) = 0$, and we have:
+
+$$
+\text{Var}(X - Y) = \text{Var}(X) + \text{Var}(Y)
+$$
+
+
+:::
